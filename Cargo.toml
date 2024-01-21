@@ -1,0 +1,24 @@
+[package]
+name = "hua_rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "./README.md"
+authors = ["Mohammed Yasin <>"]
+description = "Heirarchical Uncertainty Aggregation (Park et al., 2022) in Rust."
+repository = "https://github.com/Y-T-G/hua_rs"
+homepage = "https://github.com/Y-T-G/hua_rs"
+
+[lib]
+name = "hua_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = { version="0.15.6", features = ["rayon"] }
+numpy = "0.20.0"
+powerboxesrs = "0.2.1"
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
+serde_json = "1.0.1"
+
+[dev-dependencies]
+pyo3 = { version = "0.20.2", features = ["auto-initialize"] }
