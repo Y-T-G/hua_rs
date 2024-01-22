@@ -15,9 +15,11 @@ crate-type = ["cdylib"]
 
 [dependencies]
 ndarray = { version="0.15.6", features = ["rayon"] }
+num-traits = "0.2.17"
 numpy = "0.20.0"
 powerboxesrs = "0.2.1"
 pyo3 = { version = "0.20.2", features = ["extension-module"] }
+rayon = "1.8.1"
 serde_json = "1.0.1"
 
 [dev-dependencies]
